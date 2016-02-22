@@ -2,6 +2,12 @@
 
 class MobWeb_LockAccountCountry_Block_Onepage_Shipping extends Mage_Checkout_Block_Onepage_Shipping
 {
+    public function __construct()
+    {
+        parent::__construct();
+        $this->setModuleName('Mage_Checkout');
+    }
+    
     public function getCountryHtmlSelect($type)
     {
         $countryId = $this->getAddress()->getCountryId();
