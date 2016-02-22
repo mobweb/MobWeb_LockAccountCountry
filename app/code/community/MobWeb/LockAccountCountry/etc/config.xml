@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <MobWeb_LockAccountCountry>
+            <version>0.0.1</version>
+        </MobWeb_LockAccountCountry>
+    </modules>
+    <global>
+        <helpers>
+            <MobWeb_LockAccountCountry>
+                <class>MobWeb_LockAccountCountry_Helper</class>
+            </MobWeb_LockAccountCountry>
+        </helpers>
+        <blocks>
+            <MobWeb_LockAccountCountry>
+                <class>MobWeb_LockAccountCountry_Block</class>
+            </MobWeb_LockAccountCountry>
+            <customer>
+                <rewrite>
+                    <address_edit>MobWeb_LockAccountCountry_Block_Address_Edit</address_edit>
+                </rewrite>
+            </customer>
+            <checkout>
+                <rewrite>
+                    <onepage_billing>MobWeb_LockAccountCountry_Block_Onepage_Billing</onepage_billing>
+                </rewrite>
+            </checkout>
+            <checkout>
+                <rewrite>
+                    <onepage_shipping>MobWeb_LockAccountCountry_Block_Onepage_Shipping</onepage_shipping>
+                </rewrite>
+            </checkout>
+        </blocks>
+    </global>
+    <frontend>
+        <layout>
+            <updates>
+                <mobweb_lockaccountcountry>
+                    <file>mobweb_lockaccountcountry.xml</file>
+                </mobweb_lockaccountcountry>
+            </updates>
+        </layout>
+    </frontend>
+</config>

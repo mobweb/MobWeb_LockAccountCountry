@@ -1,0 +1,6 @@
+app/code/community/MobWeb/LockAccountCountry app/code/community/MobWeb/LockAccountCountry/
+app/design/frontend/base/default/layout/mobweb_lockaccountcountry.xml app/design/frontend/base/default/layout/mobweb_lockaccountcountry.xml
+app/etc/modules/MobWeb_LockAccountCountry.xml app/etc/modules/MobWeb_LockAccountCountry.xml
+
+# Clear the cache
+@shell   rm -rf $PROJECT/var/cache/* && echo "Magento Cache cleared"
